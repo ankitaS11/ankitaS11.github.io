@@ -8,6 +8,16 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Understanding Decorators in Python</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/</guid>
+      <description>Decorators are functions which modifies the functionality of other functions (Instead of adding more codes to original function, decorators can be used). Decorators wrap around the main function and allow us to operate on inputs and outputs. Firstly let us understand functions in python -
+def operations(x): &amp;#34;&amp;#34;&amp;#34;Incrementing x by 1&amp;#34;&amp;#34;&amp;#34; x += 1 return x operations(x=1) Now let&amp;rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, let&amp;rsquo;s say the increments have to be separate steps.</description>
+    </item>
+    
+    <item>
       <title>Understanding Iterators and Generators in Python</title>
       <link>https://ankitaS11.github.io/posts/2021/09/understanding-iterators-and-generators-in-python/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
@@ -38,16 +48,6 @@ Firstly, let’s see what these functions returns when they are not defined in t
       <description>Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.
 We need to import the header &amp;lt;vector&amp;gt; to make use of vectors.#include &amp;lt;vector&amp;gt;
 VECTOR DECLARATION AND INITIALISATION</description>
-    </item>
-    
-    <item>
-      <title>Understanding Decorators in Python</title>
-      <link>https://ankitaS11.github.io/posts/2021/06/understanding-decorators-in-python/</link>
-      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/posts/2021/06/understanding-decorators-in-python/</guid>
-      <description>Decorators are functions which modifies the functionality of other functions (Instead of adding more codes to original function, decorators can be used). Decorators wrap around the main function and allow us to operate on inputs and outputs. Firstly let us understand functions in python -
-def operations(x): &amp;#34;&amp;#34;&amp;#34;Incrementing x by 1&amp;#34;&amp;#34;&amp;#34; x += 1 return x operations(x=1) Now let&amp;rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, let&amp;rsquo;s say the increments have to be separate steps.</description>
     </item>
     
   </channel>

@@ -1,6 +1,11 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
+path = "./posts/2021/09/understanding-decorators-in-python/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/"
+title = "Understanding Decorators in Python"
+
+[[input.files]]
 path = "./posts/2021/09/understanding-iterators-and-generators-in-python/index.html"
 url = "https://ankitaS11.github.io/posts/2021/09/understanding-iterators-and-generators-in-python/"
 title = "Understanding Iterators and Generators in Python"
@@ -14,11 +19,6 @@ title = "Understanding __ str __( ) and  __ repr __( ) in Python"
 path = "./posts/2021/09/vectors-in-c-/index.html"
 url = "https://ankitaS11.github.io/posts/2021/09/vectors-in-c-/"
 title = "Vectors in C&#43;&#43;"
-
-[[input.files]]
-path = "./posts/2021/06/understanding-decorators-in-python/index.html"
-url = "https://ankitaS11.github.io/posts/2021/06/understanding-decorators-in-python/"
-title = "Understanding Decorators in Python"
 
 [[input.files]]
 path = "./about/index.html"
