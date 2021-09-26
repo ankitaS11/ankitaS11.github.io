@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Ankita Sharma]">
+<meta name="description" content="Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.
+We need to import the header &amp;lt;vector&amp;gt; to make use of vectors.#include &amp;lt;vector&amp;gt;
+VECTOR DECLARATION AND INITIALISATION" />
+<meta name="keywords" content=", coding, cpp, notes, vectors" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://ankitaS11.github.io/posts/2021/09/vectors-in-c-/" />
+
+
+<title>
+    
+    Vectors in C&#43;&#43; :: Ankita Sharma  — Hello Friend NG HZ Theme
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+      type="text/css">
+
+
+
+<link rel="stylesheet" href="https://ankitaS11.github.io/main.min.b6dbce0fdf6c61563a0c2226e857d5dadd8e5afa2c4f73ec9ea55abd831f9a72.css">
+
+
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ankitaS11.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ankitaS11.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ankitaS11.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://ankitaS11.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://ankitaS11.github.io/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://ankitaS11.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Vectors in C&#43;&#43;">
+<meta itemprop="description" content="Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.
+We need to import the header &lt;vector&gt; to make use of vectors.#include &lt;vector&gt;
+VECTOR DECLARATION AND INITIALISATION"><meta itemprop="datePublished" content="2021-09-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="958"><meta itemprop="image" content="https://ankitaS11.github.io"/>
+<meta itemprop="keywords" content="coding,cpp,notes,vectors," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ankitaS11.github.io"/>
+
+<meta name="twitter:title" content="Vectors in C&#43;&#43;"/>
+<meta name="twitter:description" content="Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.
+We need to import the header &lt;vector&gt; to make use of vectors.#include &lt;vector&gt;
+VECTOR DECLARATION AND INITIALISATION"/>
+
+
+
+    <meta property="article:section" content="cpp" />
+
+
+
+    <meta property="article:published_time" content="2021-09-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <div class="header__inner">
+        <div class="header__left">
+        <div class="logo">
+<a href="https://ankitaS11.github.io/" style="text-decoration: none;">
+        
+            <img src="https://d33wubrfki0l68.cloudfront.net/fd8d52fb3a6262a14596b6570b5542d6ebeaf8db/8bc8c/images/home.png" alt="" />
+        
+</a>
+</div>
+
+        </div>
+
+        
+        <div class="header__mid">
+        <button class="button">
+            <div class="button__text">
+        <a href="https://ankitaS11.github.io/search" >
+                Search
+        </a>
+            </div>
+        </button>
+        </div>
+       
+
+        <div class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://ankitaS11.github.io/about">About</a></li><li><a href="https://ankitaS11.github.io/posts">Blog</a></li>
+    </ul>
+    <ul class="menu__inner"><li><a href="https://ankitaS11.github.io/categories">Categories</a></li><li><a href="https://ankitaS11.github.io/tags">Tags</a></li>
+    </ul>
+</nav>
+
+            <button id="toggleMenu">
+                <div class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </div>
+             </button>
+            
+
+            <button class="theme-toggle" id="toggleTheme"><svg class="theme-toggler" width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</button>
+        </div>
+    </div>
+</header>
+
+            
+<script src="https://ankitaS11.github.io/js/mathjax-config.js"></script>
+
+
+<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-chtml.js"></script>
+
+            
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>5 minutes
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Written: 2021-09-21 00:00 &#43;0000</p>
+
+            
+
+            </p>
+        </div>
+
+        <article class="h-entry">
+            <h1 class="post-title p-name">
+                <a class="u-url" href="https://ankitaS11.github.io/posts/2021/09/vectors-in-c-/">Vectors in C++</a>
+            </h1>
+        <div class="post-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                         <span class="author u-author p-author"><a href="https://ankitaS11.github.io/author/ankita-sharma">Ankita Sharma</a></span>
+        </div>
+
+            
+
+            <div class="post-content e-content">
+                <p>Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.</p>
+<p>We need to import the header &lt;<em>vector</em>&gt; to make use of vectors.<code>#include &lt;vector&gt;</code></p>
+<p><strong>VECTOR DECLARATION AND INITIALISATION</strong></p>
+<p>The syntax to declare the array is given below :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">std<span style="color:#f92672">::</span>vector <span style="color:#f92672">&lt;</span>data_type<span style="color:#f92672">&gt;</span> vector_name; 
+</code></pre></div><p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+ <span style="color:#75715e">// Declaring a vector v 
+</span><span style="color:#75715e"></span> <span style="color:#75715e">// having 0 elements
+</span><span style="color:#75715e"></span> vector <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v;       
+ <span style="color:#75715e">// Declaring a vector v1
+</span><span style="color:#75715e"></span> <span style="color:#75715e">// and assigning values.             
+</span><span style="color:#75715e"></span> vector <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v1 <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>}         
+ <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p><strong>COPYING A VECTOR</strong></p>
+<p>Method 1:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">v2 <span style="color:#f92672">=</span> v1;                            <span style="color:#75715e">// vector v2 is the copy of vector v1.
+</span></code></pre></div><p>Method 2:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v3;               <span style="color:#75715e">// Declaring vector v3
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> v3(v1)                        <span style="color:#75715e">// copying vector v1 to v3.
+</span></code></pre></div><p><strong>ACCESSING DATA</strong></p>
+<p><code>std::vector</code> has the following functions to access the underlying data.</p>
+<ol>
+<li><code>front()</code>: To access the first element of the vector.</li>
+<li><code>back()</code>: To access the last element of the vector.</li>
+<li><code>at()</code>: To access specific elements. (It provides bound check: If the element you are trying to access is out-of-bounds, at() throws an exception.)</li>
+<li><code>[]</code>: To access specific elements.( without bound check: [] operator will not provide any bounds checking, providing for faster access while increasing the risk of a segmentation fault.)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">v1.front()     <span style="color:#75715e">// for accessing first element of vector
+</span><span style="color:#75715e"></span>v1.back()      <span style="color:#75715e">// for accessing last element of vector
+</span><span style="color:#75715e"></span>v1[<span style="color:#ae81ff">0</span>]          <span style="color:#75715e">// for accessing element at oth index.
+</span><span style="color:#75715e"></span>v1.at(<span style="color:#ae81ff">4</span>)       <span style="color:#75715e">// for accessing element at 4th index.
+</span></code></pre></div><ol start="5">
+<li><code>data()</code> : The function returns a pointer to the first element which is used internally by the vector.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+ 
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    <span style="color:#75715e">// initialising vector
+</span><span style="color:#75715e"></span>    vector <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v <span style="color:#f92672">=</span> { <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span> };
+ 
+    <span style="color:#75715e">// memory pointer pointing to the
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// first element
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> pos <span style="color:#f92672">=</span> v.data();
+ 
+    <span style="color:#75715e">// prints the vector
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> v.size(); i<span style="color:#f92672">++</span>)
+        cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>pos<span style="color:#f92672">++</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+ 
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p><strong>ADDING AND REMOVING ELEMENTS</strong></p>
+<p><code>std::vector</code> has a variety of functions to add or remove elements from the vector.</p>
+<ol>
+<li><code>push_back()</code>: The function adds an element at the end of the vector and increases the size by 1.</li>
+<li><code>emplace_back()</code>: emplace_back() allows for constructor arguments to be forwarded so that the new element can be constructed in place.</li>
+<li><code>pop_back()</code>: The function deletes the last element present in the vector and reduces the size by 1.</li>
+<li><code>insert()</code>: To insert elements at specific element. Supply an iterator to the location where the new element should be inserted:</li>
+<li><code>erase()</code>:  To erase a specific element, call the erase() function and supply an iterator to the element you want to remove.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+v2.push_back(x);                   <span style="color:#75715e">// adds element to end
+</span><span style="color:#75715e"></span>v2.pop_back(x);                    <span style="color:#75715e">// deletes last element
+</span><span style="color:#75715e"></span>v2.insert(v2.begin(),x);           <span style="color:#75715e">// adds element in beg(v2.begin()).
+</span><span style="color:#75715e"></span>v2.emplace_back(<span style="color:#ae81ff">10</span>);               <span style="color:#75715e">// constructs an element in place at the end
+</span><span style="color:#75715e"></span>v2.erase(v2.begin());              <span style="color:#75715e">// wil erase the first element
+</span></code></pre></div><p><strong>MANAGING MEMORY</strong></p>
+<p>Extra memory can be allocated to prevent a std::vector to reallocate memory every time a new element is inserted. Additionally, if you remove elements from the std::vector, that memory remains allocated to the std::vector.</p>
+<p>Luckily, the std::vector class provides us a few functions for managing memory.</p>
+<ol>
+<li><code>reserve()</code>: Often, you are aware of how many elements you need to store in your std::vector (at least as a maximum). As reallocations are costly in terms of performance, you can use the reserve() function to make a single large allocation, reducing the runtime hit that may occur from frequent reallocations.
+NOTE: reserve() can only increase the vector size. If the requested capacity is smaller than the current capacity, nothing happens.</li>
+<li><code>shrink_to_fit()</code> : shrink_to_fit() performs a memory allocation to achieve the reduced size. If you have reserved space greater than your current needs, you can shrink the buffer.</li>
+<li><code>clear()</code>: The clear() function erases all elements in the vector without reducing the capacity.</li>
+<li><code>resize()</code>: function to manually increase or decrease the size of your std::vector at will. If you are increasing the size using resize(), the new elements will be 0-initialized by default. You can also supply an initialization value for the new elements. If you are resizing to a smaller size, the elements at the end of the list will be removed.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">v2.reserve(<span style="color:#ae81ff">10</span>)         <span style="color:#75715e">// increase vector capacity to 10 elements
+</span><span style="color:#75715e"></span>v2.shrink_to_fit();    <span style="color:#75715e">// shrinks the buffer.
+</span><span style="color:#75715e"></span>v2.clear()             <span style="color:#75715e">// erases all elements 
+</span><span style="color:#75715e"></span>v2.resize(<span style="color:#ae81ff">5</span>);          <span style="color:#75715e">// resize to 5. The new elements will be 0-initialized
+</span><span style="color:#75715e"></span>v2.resize(<span style="color:#ae81ff">10</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);     <span style="color:#75715e">// resize to 10. New elements initialized with -1
+</span><span style="color:#75715e"></span>v2.resize(<span style="color:#ae81ff">4</span>);          <span style="color:#75715e">// shrink and strip off extra elements
+</span></code></pre></div><p>NOTE: If you want to add space but don’t want to add elements to the vector, use the reserve() function instead of resize().</p>
+<p><strong>OTHER USEFUL INTERFACES</strong></p>
+<ol>
+<li><code>size()</code> : returns number of elements present.</li>
+<li><code>capacity()</code>: returns the current amount of memory allocated for the vector in terms of the number of elements.</li>
+</ol>
+<p>NOTE:
+size() returns the number of present elements, capacity() is the current upper limit on the number of memory blocks allocated.You can clear all elements in a std::vector by using the clear() function. This will set the size() to 0, but note that capacity() will remain at the previous allocation level.</p>
+<ol start="3">
+<li><code>empty()</code>: To check whether the vector is empty. 0-&gt; true false otherwise.</li>
+<li><code>max_size()</code>: This returns maximum size of a std::vector on the system.</li>
+</ol>
+<p><strong>FOR LOOP</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"> <span style="color:#75715e">// Method 1
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> v2.size(); j<span style="color:#f92672">++</span>)
+
+ <span style="color:#75715e">// Method 2
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>t: v2)
+</code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;v2: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span> t : v2)
+{
+    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> t <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+}
+std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</code></pre></div><p><strong>SORT OPERATION</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">std<span style="color:#f92672">::</span>sort(v2.begin(), v2.end());
+</code></pre></div><p><strong>TIME COMPLEXITY</strong></p>
+<ol>
+<li>Random access – O(1)</li>
+<li>Insertion or removal of elements at the end – O(1)</li>
+<li>Insertion or removal of elements – O(n)</li>
+</ol>
+<hr>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://ankitaS11.github.io/tags/coding">coding</a></span><span class="tag"><a href="https://ankitaS11.github.io/tags/cpp">cpp</a></span><span class="tag"><a href="https://ankitaS11.github.io/tags/notes">notes</a></span><span class="tag"><a href="https://ankitaS11.github.io/tags/vectors">vectors</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>958 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Posted: <time class="dt-published"> 2021-09-21 05:30 &#43;0530</time></p>
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f" target="_blank" rel="noopener" aria-label="Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5"/><path d="M15.84 9.5H13.5V8.48c0-.53.35-.65.6-.65h1.4v-2.3h-2.35c-2.3 0-2.65 1.7-2.65 2.8V9.5h-2v2h2v7h3v-7h2.1l.24-2z"/></svg></div>Facebook</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=%22Vectors%20in%20C%2b%2b%22%20seems%20like%20an%20interesting%20read%20from%20%40rg0swami&amp;url=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f" target="_blank" rel="noopener" aria-label="Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.5 7.4l-2 .2c-.4-.5-1-.8-2-.8C13.3 6.8 12 8 12 9.4v.6c-2 0-4-1-5.4-2.7-.2.4-.3.8-.3 1.3 0 1 .4 1.7 1.2 2.2-.5 0-1 0-1.2-.3 0 1.3 1 2.3 2 2.6-.3.4-.7.4-1 0 .2 1.4 1.2 2 2.3 2-1 1-2.5 1.4-4 1 1.3 1 2.7 1.4 4.2 1.4 4.8 0 7.5-4 7.5-7.5v-.4c.5-.4.8-1.5 1.2-2z"/><circle cx="12" cy="12" r="11.5"/></svg></div>Twitter</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=%22Vectors%20in%20C%2b%2b%22%20seems%20interesting...&amp;body=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f" target="_self" rel="noopener" aria-label="E-Mail">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 16c0 .8-.7 1.5-1.5 1.5H6c-.8 0-1.5-.7-1.5-1.5V8c0-.8.7-1.5 1.5-1.5h12c.8 0 1.5.7 1.5 1.5v8zm-2-7.5L12 13 6.5 8.5m11 6l-4-2.5m-7 2.5l4-2.5"/><circle cx="12" cy="12" r="11.5"/></svg></div>E-Mail</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f&amp;title=%22Vectors%20in%20C%2b%2b%22%20seems%20interesting...&amp;summary=%22Vectors%20in%20C%2b%2b%22%20seems%20interesting...&amp;source=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f" target="_blank" rel="noopener" aria-label="LinkedIn">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5"/><path d="M15 12.5c-.28 0-.5.22-.5.5v3.5h-3s.03-6.48 0-7h3v.83s.46-.75 1.7-.75c1.56 0 2.3 1.12 2.3 3.3v3.62h-3V13c0-.28-.23-.5-.5-.5zm-7.5-3h2v7h-2z"/><circle cx="8.5" cy="6.5" r="1"/></svg></div>LinkedIn</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f&amp;resubmit=true&amp;title=%22Vectors%20in%20C%2b%2b%22%20seems%20interesting..." target="_blank" rel="noopener" aria-label="Reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5"/><ellipse cx="12" cy="14.37" rx="6.2" ry="4.24"/><path d="M14.3 16.25c-.62.36-1.42.57-2.3.57-.88 0-1.7-.2-2.32-.58"/><circle cx="14.61" cy="13.39" r=".98"/><circle cx="9.39" cy="13.39" r=".98"/><path d="M16.4 11.38c.26-.55.82-.92 1.47-.92.9 0 1.63.73 1.63 1.63 0 .8-.6 1.47-1.38 1.6"/><circle cx="17.22" cy="7.52" r="1.63"/><path d="M7.6 11.38c-.26-.54-.82-.92-1.47-.92-.9 0-1.63.73-1.63 1.63 0 .8.6 1.47 1.38 1.6M12 10.12s-.08-4.82 3.6-2.6"/></svg></div>Reddit</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=%22Vectors%20in%20C%2b%2b%22%20seems%20interesting...%20https%3a%2f%2fankitaS11.github.io%2fposts%2f2021%2f09%2fvectors-in-c-%2f" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle xmlns="http://www.w3.org/2000/svg" cx="12" cy="12" r="11.5"/><path stroke-width="1px" d="M17.6 6.2c-1.5-1.5-3.4-2.3-5.5-2.3-4.3 0-7.8 3.5-7.8 7.8 0 1.4.4 2.7 1 3.9l-1.1 4 4.1-1.1c1.1.6 2.4.9 3.7.9 4.3 0 7.8-3.5 7.8-7.8.1-2-.7-3.9-2.2-5.4zm-5.5 11.9c-1.2 0-2.3-.3-3.3-.9l-.2-.1-2.4.6.7-2.4-.2-.2c-.6-1-1-2.2-1-3.4 0-3.6 2.9-6.5 6.5-6.5 1.7 0 3.3.7 4.6 1.9 1.2 1.2 1.9 2.8 1.9 4.6-.1 3.5-3 6.4-6.6 6.4zm3.5-4.8c-.2-.1-1.1-.6-1.3-.6-.2-.1-.3-.1-.4.1-.1.2-.5.6-.6.8-.1.1-.2.1-.4 0s-.8-.3-1.6-1c-.6-.5-1-1.2-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3s.1-.2.2-.3c.1-.1 0-.2 0-.3s-.4-1.1-.6-1.4c-.2-.4-.3-.3-.4-.3h-.4s-.3 0-.5.2-.7.7-.7 1.6c0 1 .7 1.9.8 2s1.4 2.1 3.3 2.9c.5.2.8.3 1.1.4.5.1.9.1 1.2.1.4-.1 1.1-.5 1.3-.9.2-.5.2-.8.1-.9 0-.2-.2-.3-.4-.4z"/></svg></div>WhatsApp</div>
+</a>
+</div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://ankitaS11.github.io/posts/2021/09/understanding-__-str-__-and-__-repr-__-in-python/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Understanding __ str __( ) and  __ repr __( ) in Python</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://ankitaS11.github.io/posts/2021/06/understanding-decorators-in-python/">
+                                <span class="button__text">Understanding Decorators in Python</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+
+        
+    </main>
+
+            
+                <footer class="footer">
+    <p>
+        &copy; 2021
+            
+                <span><a href="https://ankitaS11.github.io">Ankita Sharma</a></span>
+                
+                 <a href="https://ankitaS11.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+                <br>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>
+                Powered by <a href="http://gohugo.io"><u>Hugo</u></a> and <a href="https://github.com/HaoZeke/hugo-theme-hello-friend-ng-hz"><u>this theme</u></a>.</br>
+                
+                
+    </p>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+
+<script src="https://ankitaS11.github.io/bundle.min.5fae9992ea406007408dc33b0b3a8376d61e2f1d6ac50ba1dad7580ac50afb5199bcef3bbc3677e77553a9980bf882cf71edc2f755687dd7725f12ece4304ac2.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-146662543-1', 'auto');ga('send', 'pageview');
+    </script>
+
+
+
+
+    </body>
+</html>
