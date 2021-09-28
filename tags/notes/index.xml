@@ -6,23 +6,46 @@
     <description>Recent content in notes on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Understanding Decorators in Python</title>
-      <link>https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/</link>
-      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      <title> Python - itertools.product()</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/</guid>
-      <description>Decorators are functions which modifies the functionality of other functions (Instead of adding more codes to original function, decorators can be used). Decorators wrap around the main function and allow us to operate on inputs and outputs. Firstly let us understand functions in python -
-def operations(x): &amp;#34;&amp;#34;&amp;#34;Incrementing x by 1&amp;#34;&amp;#34;&amp;#34; x += 1 return x operations(x=1) Now let&amp;rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, let&amp;rsquo;s say the increments have to be separate steps.</description>
+      <guid>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</guid>
+      <description>The itertools is a module in Python having a collection of functions for handling iterators. They make iterating through the iterables like lists and strings very easily.
+itertools.product() is a function in itertools module to generate cartesian product of multiple lists in python, it is equivalent to for loops. They basically creates iterators for efficient looping and falls under the category of combinatoric iterators .
+What does itertools.product() do ? itertools.</description>
     </item>
     
     <item>
-      <title>Understanding Iterators and Generators in Python</title>
-      <link>https://ankitaS11.github.io/posts/2021/09/understanding-iterators-and-generators-in-python/</link>
+      <title>Python - itertools.chain()</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/</guid>
+      <description>The itertools is a module in Python having a collection of functions for handling iterators. They make iterating through the iterables like lists and strings very easily.
+itertools.chain() is a function in itertools module that takes a series of iterables and returns one iterable. It basically groups all the iterable together and produces a single iterable as output. They come under the category of terminating iterators.
+Syntax
+itertools.chain(*iterables) Example 1</description>
+    </item>
+    
+    <item>
+      <title>Python Decorators</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/python-decorators/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ankitaS11.github.io/posts/2021/09/understanding-iterators-and-generators-in-python/</guid>
+      <guid>https://ankitaS11.github.io/posts/2021/09/python-decorators/</guid>
+      <description>Decorators are functions which modifies the functionality of other functions (instead of adding more codes to original function, decorators can be used). Decorators wrap around the main function and allow us to operate on inputs and outputs. Firstly let us understand functions in python -
+def operations(x): &amp;#34;&amp;#34;&amp;#34;Incrementing x by 1&amp;#34;&amp;#34;&amp;#34; x += 1 return x operations(x=1) Now let&amp;rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, here&amp;rsquo;s how we would do it by changing the original code:</description>
+    </item>
+    
+    <item>
+      <title>Iterators and Generators in Python</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/iterators-and-generators-in-python/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/iterators-and-generators-in-python/</guid>
       <description>Iteration refers to the process of repeating the same logic more than one time.
 An iterator is an object containing a countable number of values and is used to iterate over iterable objects (list, tuples, dictionaries, sets, etc.). It implements the iterator protocol, which consists of the methods __ iter__() and __ next__().
 iter() keyword is used to create an iterator containing an iterable object. next() keyword is used to call the next element in the iterable object.</description>

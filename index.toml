@@ -1,14 +1,24 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
-path = "./posts/2021/09/understanding-decorators-in-python/index.html"
-url = "https://ankitaS11.github.io/posts/2021/09/understanding-decorators-in-python/"
-title = "Understanding Decorators in Python"
+path = "./posts/2021/09/python-itertools.product/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/python-itertools.product/"
+title = " Python - itertools.product()"
 
 [[input.files]]
-path = "./posts/2021/09/understanding-iterators-and-generators-in-python/index.html"
-url = "https://ankitaS11.github.io/posts/2021/09/understanding-iterators-and-generators-in-python/"
-title = "Understanding Iterators and Generators in Python"
+path = "./posts/2021/09/python-itertools.chain/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/"
+title = "Python - itertools.chain()"
+
+[[input.files]]
+path = "./posts/2021/09/python-decorators/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/python-decorators/"
+title = "Python Decorators"
+
+[[input.files]]
+path = "./posts/2021/09/iterators-and-generators-in-python/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/iterators-and-generators-in-python/"
+title = "Iterators and Generators in Python"
 
 [[input.files]]
 path = "./posts/2021/09/understanding-__-str-__-and-__-repr-__-in-python/index.html"

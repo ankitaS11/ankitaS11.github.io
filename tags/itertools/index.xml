@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>itertools on Ankita Sharma</title>
+    <link>https://ankitaS11.github.io/tags/itertools/</link>
+    <description>Recent content in itertools on Ankita Sharma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/itertools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Python - itertools.product()</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</guid>
+      <description>The itertools is a module in Python having a collection of functions for handling iterators. They make iterating through the iterables like lists and strings very easily.
+itertools.product() is a function in itertools module to generate cartesian product of multiple lists in python, it is equivalent to for loops. They basically creates iterators for efficient looping and falls under the category of combinatoric iterators .
+What does itertools.product() do ? itertools.</description>
+    </item>
+    
+    <item>
+      <title>Python - itertools.chain()</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/</guid>
+      <description>The itertools is a module in Python having a collection of functions for handling iterators. They make iterating through the iterables like lists and strings very easily.
+itertools.chain() is a function in itertools module that takes a series of iterables and returns one iterable. It basically groups all the iterable together and produces a single iterable as output. They come under the category of terminating iterators.
+Syntax
+itertools.chain(*iterables) Example 1</description>
+    </item>
+    
+  </channel>
+</rss>
