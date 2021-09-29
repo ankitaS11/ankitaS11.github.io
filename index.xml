@@ -15,7 +15,7 @@
       <guid>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</guid>
       <description>The itertools is a module in Python having a collection of functions for handling iterators. They make iterating through the iterables like lists and strings very easily.
 itertools.product() is a function in itertools module to generate cartesian product of multiple lists in python, it is equivalent to for loops. They basically creates iterators for efficient looping and falls under the category of combinatoric iterators .
-What does itertools.product() do ? itertools.</description>
+What does itertools.product() do ?</description>
     </item>
     
     <item>
