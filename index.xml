@@ -31,6 +31,17 @@ itertools.chain(*iterables) Example 1</description>
     </item>
     
     <item>
+      <title>Basics of GANs and Loss Function</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/</guid>
+      <description>GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
+  Discriminator
+It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use.</description>
+    </item>
+    
+    <item>
       <title>Python Decorators</title>
       <link>https://ankitaS11.github.io/posts/2021/09/python-decorators/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
@@ -82,6 +93,15 @@ VECTOR DECLARATION AND INITIALISATION</description>
       <description>Hello! I am a third-year Electronics and Communication Engineering undergraduate at International Institute of Information Technology, Naya Raipur, Chhattisgarh, India.
 Work Experience   Summer Research Intern - Indian Institute of Technology, Bhilai (May 2021 - Aug 2021).
  Mentor: Dr. Gagan Raj Gupta, Visiting Associate Professor, IIT Bhilai Scraped websites and collected landslide descriptions from the year 2006-2020, prepared dataset, extracted information from descriptions using NER(Named Entity Recognition), and performed data preprocessing.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ankitaS11.github.io/posts/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/1/01/</guid>
+      <description>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600474/</description>
     </item>
     
     <item>

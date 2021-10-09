@@ -11,6 +11,11 @@ url = "https://ankitaS11.github.io/posts/2021/09/python-itertools.chain/"
 title = "Python - itertools.chain()"
 
 [[input.files]]
+path = "./posts/2021/09/basics-of-gans-and-loss-function/index.html"
+url = "https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/"
+title = "Basics of GANs and Loss Function"
+
+[[input.files]]
 path = "./posts/2021/09/python-decorators/index.html"
 url = "https://ankitaS11.github.io/posts/2021/09/python-decorators/"
 title = "Python Decorators"
@@ -34,6 +39,11 @@ title = "Vectors in C&#43;&#43;"
 path = "./about/index.html"
 url = "https://ankitaS11.github.io/about/"
 title = "About"
+
+[[input.files]]
+path = "./posts/1/01/index.html"
+url = "https://ankitaS11.github.io/posts/1/01/"
+title = ""
 
 [[input.files]]
 path = "./categories/index.html"
