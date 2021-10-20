@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ankitaS11.github.io/posts/2021/10/visibility-enhancer-using-opencv-python/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</loc>
     <lastmod>2021-09-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,6 +12,9 @@
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/</loc>
+    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</loc>
     <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/posts/2021/09/python-decorators/</loc>
@@ -24,31 +30,46 @@
     <lastmod>2021-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/categories/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/tags/coding/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/tags/image-processing/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/tags/notes/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/tags/opencv/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/categories/opencv/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/posts/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/tags/python/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/categories/python/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ankitaS11.github.io/tags/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/tags/itertools/</loc>
     <lastmod>2021-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ankitaS11.github.io/tags/notes/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <loc>https://ankitaS11.github.io/tags/cpp/</loc>
+    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ankitaS11.github.io/posts/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ankitaS11.github.io/tags/python/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ankitaS11.github.io/categories/python/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ankitaS11.github.io/tags/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <loc>https://ankitaS11.github.io/categories/cpp/</loc>
+    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/tags/deep-learning/</loc>
     <lastmod>2021-09-25T00:00:00+00:00</lastmod>
@@ -59,11 +80,11 @@
     <loc>https://ankitaS11.github.io/categories/gans/</loc>
     <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ankitaS11.github.io/tags/cpp/</loc>
-    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+    <loc>https://ankitaS11.github.io/tags/leetcode/</loc>
+    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ankitaS11.github.io/categories/cpp/</loc>
-    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+    <loc>https://ankitaS11.github.io/categories/leetcode/</loc>
+    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ankitaS11.github.io/tags/vectors/</loc>
     <lastmod>2021-09-21T00:00:00+00:00</lastmod>

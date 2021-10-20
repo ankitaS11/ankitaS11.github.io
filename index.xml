@@ -6,7 +6,16 @@
     <description>Recent content on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visibility Enhancer using OpenCV Python</title>
+      <link>https://ankitaS11.github.io/posts/2021/10/visibility-enhancer-using-opencv-python/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/10/visibility-enhancer-using-opencv-python/</guid>
+      <description>Improved vision has lots of real life applications including the cameras used in self driving cars, medical images to diagnose accurately. I am currently working on a project named &amp;quot; Vechicle Detection in Foggy/Rainy season&amp;quot; to help improve the performance of self driving cars in adverse weather. For that I used some basic image processing techniques to start with and improve the visibility of vechicle images in foggy weather. Improved vision will not only help to prevent accidents in self-driving cars but also it can be used with traffic light systems, to detect vehicles and their license numbers/color of vehicle/model with better accuracy.</description>
+    </item>
+    
     <item>
       <title> Python - itertools.product()</title>
       <link>https://ankitaS11.github.io/posts/2021/09/python-itertools.product/</link>
@@ -39,6 +48,19 @@ itertools.chain(*iterables) Example 1</description>
       <description>GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
   Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use.</description>
+    </item>
+    
+    <item>
+      <title>Product of an array except self</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</guid>
+      <description>Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+Example 1:
+Input: [1,2,3,4]Output: [24,12,8,6]Example 2:
+Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0]Constraints:
+2 &amp;lt;= nums.length &amp;lt;= 105-30 &amp;lt;= nums[i] &amp;lt;= 30The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.</description>
     </item>
     
     <item>
@@ -93,24 +115,6 @@ VECTOR DECLARATION AND INITIALISATION</description>
       <description>Hello! I am a third-year Electronics and Communication Engineering undergraduate at International Institute of Information Technology, Naya Raipur, Chhattisgarh, India.
 Work Experience   Summer Research Intern - Indian Institute of Technology, Bhilai (May 2021 - Aug 2021).
  Mentor: Dr. Gagan Raj Gupta, Visiting Associate Professor, IIT Bhilai Scraped websites and collected landslide descriptions from the year 2006-2020, prepared dataset, extracted information from descriptions using NER(Named Entity Recognition), and performed data preprocessing.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ankitaS11.github.io/posts/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/posts/1/01/</guid>
-      <description>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600474/</description>
-    </item>
-    
-    <item>
-      <title>Categories</title>
-      <link>https://ankitaS11.github.io/categories/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/categories/</guid>
-      <description></description>
     </item>
     
   </channel>

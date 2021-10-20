@@ -6,13 +6,49 @@
     <description>Recent content in Tags on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>coding</title>
       <link>https://ankitaS11.github.io/tags/coding/</link>
-      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ankitaS11.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image processing</title>
+      <link>https://ankitaS11.github.io/tags/image-processing/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://ankitaS11.github.io/tags/notes/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openCV</title>
+      <link>https://ankitaS11.github.io/tags/opencv/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://ankitaS11.github.io/tags/python/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -26,20 +62,11 @@
     </item>
     
     <item>
-      <title>notes</title>
-      <link>https://ankitaS11.github.io/tags/notes/</link>
-      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <title>cpp</title>
+      <link>https://ankitaS11.github.io/tags/cpp/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ankitaS11.github.io/tags/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://ankitaS11.github.io/tags/python/</link>
-      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/tags/python/</guid>
+      <guid>https://ankitaS11.github.io/tags/cpp/</guid>
       <description></description>
     </item>
     
@@ -62,20 +89,11 @@
     </item>
     
     <item>
-      <title>cpp</title>
-      <link>https://ankitaS11.github.io/tags/cpp/</link>
-      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <title>leetcode</title>
+      <link>https://ankitaS11.github.io/tags/leetcode/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ankitaS11.github.io/tags/cpp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vectors</title>
-      <link>https://ankitaS11.github.io/tags/vectors/</link>
-      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/tags/vectors/</guid>
+      <guid>https://ankitaS11.github.io/tags/leetcode/</guid>
       <description></description>
     </item>
     

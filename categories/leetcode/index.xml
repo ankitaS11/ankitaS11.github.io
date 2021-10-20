@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>leetcode on Ankita Sharma</title>
+    <link>https://ankitaS11.github.io/categories/leetcode/</link>
+    <description>Recent content in leetcode on Ankita Sharma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product of an array except self</title>
+      <link>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</guid>
+      <description>Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+Example 1:
+Input: [1,2,3,4]Output: [24,12,8,6]Example 2:
+Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0]Constraints:
+2 &amp;lt;= nums.length &amp;lt;= 105-30 &amp;lt;= nums[i] &amp;lt;= 30The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.</description>
+    </item>
+    
+  </channel>
+</rss>
