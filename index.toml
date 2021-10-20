@@ -1,9 +1,9 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
-path = "./posts/2021/10/visibility-enhancer-using-opencv-python/index.html"
-url = "https://ankitaS11.github.io/posts/2021/10/visibility-enhancer-using-opencv-python/"
-title = "Visibility Enhancer using OpenCV Python"
+path = "./posts/2021/10/product-of-an-array-except-self/index.html"
+url = "https://ankitaS11.github.io/posts/2021/10/product-of-an-array-except-self/"
+title = "Product of an array except self"
 
 [[input.files]]
 path = "./posts/2021/09/python-itertools.product/index.html"
@@ -19,11 +19,6 @@ title = "Python - itertools.chain()"
 path = "./posts/2021/09/basics-of-gans-and-loss-function/index.html"
 url = "https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/"
 title = "Basics of GANs and Loss Function"
-
-[[input.files]]
-path = "./posts/2021/09/product-of-an-array-except-self/index.html"
-url = "https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/"
-title = "Product of an array except self"
 
 [[input.files]]
 path = "./posts/2021/09/python-decorators/index.html"
@@ -49,6 +44,11 @@ title = "Vectors in C&#43;&#43;"
 path = "./about/index.html"
 url = "https://ankitaS11.github.io/about/"
 title = "About"
+
+[[input.files]]
+path = "./posts/1/01/index.html"
+url = "https://ankitaS11.github.io/posts/1/01/"
+title = ""
 
 [[input.files]]
 path = "./posts/1/01/index.html"

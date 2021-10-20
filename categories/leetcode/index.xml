@@ -6,13 +6,13 @@
     <description>Recent content in leetcode on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Product of an array except self</title>
-      <link>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</link>
-      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      <link>https://ankitaS11.github.io/posts/2021/10/product-of-an-array-except-self/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ankitaS11.github.io/posts/2021/09/product-of-an-array-except-self/</guid>
+      <guid>https://ankitaS11.github.io/posts/2021/10/product-of-an-array-except-self/</guid>
       <description>Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 Example 1:
 Input: [1,2,3,4]Output: [24,12,8,6]Example 2:
