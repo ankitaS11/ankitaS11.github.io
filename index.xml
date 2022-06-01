@@ -6,7 +6,18 @@
     <description>Recent content on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outreachy | Introduce Yourself</title>
+      <link>https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/</guid>
+      <description>This is my first blog in the series where I talk about my experience as an intern at Outreachy, and working with the Moja Global community! I&amp;rsquo;m more than excited to share how things go as i move along, and I hope to continue writing these blogs weekly.
+In this blog, I will be talking about myself and the core values that helped me throughout the journey.
+Who Am I?</description>
+    </item>
+    
     <item>
       <title>Product of an array except self</title>
       <link>https://ankitaS11.github.io/posts/2021/10/product-of-an-array-except-self/</link>
@@ -107,15 +118,6 @@ VECTOR DECLARATION AND INITIALISATION</description>
       <description>Hello! I am a third-year Electronics and Communication Engineering undergraduate at International Institute of Information Technology, Naya Raipur, Chhattisgarh, India.
 Work Experience   Summer Research Intern - Indian Institute of Technology, Bhilai (May 2021 - Aug 2021).
  Mentor: Dr. Gagan Raj Gupta, Visiting Associate Professor, IIT Bhilai Scraped websites and collected landslide descriptions from the year 2006-2020, prepared dataset, extracted information from descriptions using NER(Named Entity Recognition), and performed data preprocessing.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ankitaS11.github.io/posts/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/posts/1/01/</guid>
-      <description>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600474/</description>
     </item>
     
   </channel>

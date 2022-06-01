@@ -1,6 +1,11 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
+path = "./posts/2022/06/outreachy-introduce-yourself/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/"
+title = "Outreachy | Introduce Yourself"
+
+[[input.files]]
 path = "./posts/2021/10/product-of-an-array-except-self/index.html"
 url = "https://ankitaS11.github.io/posts/2021/10/product-of-an-array-except-self/"
 title = "Product of an array except self"
