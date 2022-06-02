@@ -8,6 +8,17 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/outreachy/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MongoDB vs CosmosDB</title>
+      <link>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</guid>
+      <description>As an outreachy intern at Moja Global, I was involved in discussions about storing data in CosmosDB and MongoDB.
+This blog contains my notes on the comparison of MongoDB and CosmosDB. A lot of this is written in terms of how a database server can be useful for my work at Moja Global.
+Factors affecting the choice  Better choice as document storage. Type of data that needs to be stored.</description>
+    </item>
+    
+    <item>
       <title>Outreachy | Introduce Yourself</title>
       <link>https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>

@@ -8,6 +8,17 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MongoDB vs CosmosDB</title>
+      <link>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</guid>
+      <description>As an outreachy intern at Moja Global, I was involved in discussions about storing data in CosmosDB and MongoDB.
+This blog contains my notes on the comparison of MongoDB and CosmosDB. A lot of this is written in terms of how a database server can be useful for my work at Moja Global.
+Factors affecting the choice  Better choice as document storage. Type of data that needs to be stored.</description>
+    </item>
+    
+    <item>
       <title>Outreachy | Introduce Yourself</title>
       <link>https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
@@ -107,17 +118,6 @@ Firstly, let’s see what these functions returns when they are not defined in t
       <description>Vectors are sequence container class that stores its elements in contiguous memory locations and implements dynamic array, which means it allocates memory at run time and resizes itself automatically when an element is inserted or deleted. Vectors can simply be thought of as an array that has the ability to automatically resize itself.
 We need to import the header &amp;lt;vector&amp;gt; to make use of vectors.#include &amp;lt;vector&amp;gt;
 VECTOR DECLARATION AND INITIALISATION</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ankitaS11.github.io/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/about/</guid>
-      <description>Hello! I am a third-year Electronics and Communication Engineering undergraduate at International Institute of Information Technology, Naya Raipur, Chhattisgarh, India.
-Work Experience   Summer Research Intern - Indian Institute of Technology, Bhilai (May 2021 - Aug 2021).
- Mentor: Dr. Gagan Raj Gupta, Visiting Associate Professor, IIT Bhilai Scraped websites and collected landslide descriptions from the year 2006-2020, prepared dataset, extracted information from descriptions using NER(Named Entity Recognition), and performed data preprocessing.</description>
     </item>
     
   </channel>
