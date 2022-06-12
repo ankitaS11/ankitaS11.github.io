@@ -6,7 +6,18 @@
     <description>Recent content in Outreachy on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/outreachy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/categories/outreachy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outreachy | Week-2</title>
+      <link>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</guid>
+      <description>This is my second blog, in the Outreachy series, where I talk about my experience working with the Moja Global community, and what I learnt - dos and don&amp;rsquo;ts, probably?
+It’s too early, to be honest, to comment on what one should not do, but I’m sure I’ve learnt what can be done to be better in the tasks you’ve been assigned to. A few points:
+Discuss your questions publicly! Open discussions, issues.</description>
+    </item>
+    
     <item>
       <title>MongoDB vs CosmosDB</title>
       <link>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</link>

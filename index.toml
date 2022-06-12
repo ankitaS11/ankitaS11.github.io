@@ -1,6 +1,11 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
+path = "./posts/2022/06/outreachy-week-2/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/"
+title = "Outreachy | Week-2"
+
+[[input.files]]
 path = "./posts/2022/06/mongodb-vs-cosmosdb/index.html"
 url = "https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/"
 title = "MongoDB vs CosmosDB"
