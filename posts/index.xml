@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ankitaS11.github.io/posts/2022/07/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/07/</guid>
+      <description>Hi everyone! Thought I’ll update about what I’ve been upto, and how the progress looks like. This week was a little slow in terms of writing codes, but that’s the fun part - half of the time is spent (also: should be) on discussions, getting consensus on your thoughts and discussing options available. I think I have had a fairly great experience doing that, my mentor Andrew helped me push forward to discuss my thoughts openly on GitHub discussions, and I think it was a great learning experience for me.</description>
+    </item>
+    
     <item>
       <title>Outreachy | Week-2</title>
       <link>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</link>
@@ -15,7 +24,7 @@
       <guid>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</guid>
       <description>This is my second blog, in the Outreachy series, where I talk about my experience working with the Moja Global community, and what I learnt - dos and don&amp;rsquo;ts, probably?
 It’s too early, to be honest, to comment on what one should not do, but I’m sure I’ve learnt what can be done to be better in the tasks you’ve been assigned to. A few points:
-  Discuss your questions publicly!</description>
+Discuss your questions publicly! Open discussions, issues.</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@ It’s too early, to be honest, to comment on what one should not do, but I’m 
       <guid>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</guid>
       <description>As an outreachy intern at Moja Global, I was involved in discussions about storing data in CosmosDB and MongoDB.
 This blog contains my notes on the comparison of MongoDB and CosmosDB. A lot of this is written in terms of how a database server can be useful for my work at Moja Global.
-Factors affecting the choice  Better choice as document storage. Type of data that needs to be stored.</description>
+Factors affecting the choice Better choice as document storage. Type of data that needs to be stored. Performance, storage capacity and throughput scale.</description>
     </item>
     
     <item>
@@ -49,8 +58,8 @@ Who Am I?</description>
       <description>I came across an interesting question, so thought of sharing this!
 Question : Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 Example 1:
-Input: [1,2,3,4]Output: [24,12,8,6]Example 2:
-Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0]Constraints:
+Input: [1,2,3,4]Output: [24,12,8,6] Example 2:
+Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0] Constraints:
 1. 2 &amp;lt;= nums.length &amp;lt;= 1052. -30 &amp;lt;= nums[i] &amp;lt;= 303.</description>
     </item>
     
@@ -84,7 +93,7 @@ itertools.chain(*iterables) Example 1</description>
       
       <guid>https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/</guid>
       <description>GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
-  Discriminator
+Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use.</description>
     </item>
     
@@ -107,17 +116,6 @@ def operations(x): &amp;#34;&amp;#34;&amp;#34;Incrementing x by 1&amp;#34;&amp;#
       <description>Iteration refers to the process of repeating the same logic more than one time.
 An iterator is an object containing a countable number of values and is used to iterate over iterable objects (list, tuples, dictionaries, sets, etc.). It implements the iterator protocol, which consists of the methods __ iter__() and __ next__().
 iter() keyword is used to create an iterator containing an iterable object. next() keyword is used to call the next element in the iterable object.</description>
-    </item>
-    
-    <item>
-      <title>Understanding __ str __( ) and  __ repr __( ) in Python</title>
-      <link>https://ankitaS11.github.io/posts/2021/09/understanding-__-str-__-and-__-repr-__-in-python/</link>
-      <pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ankitaS11.github.io/posts/2021/09/understanding-__-str-__-and-__-repr-__-in-python/</guid>
-      <description>In class and objects, dunder str ( __ str __( ) ) and dunder repr ( __ repr __( ) ) built-in functions, also known as magic functions are used to return the string representation of the object. If both of them return strings, then what’s the difference between them?
-Firstly, let’s see what these functions returns when they are not defined in the class.
-# Creating a class named Addition class Addition: def __init__(self,num1,num2): self.</description>
     </item>
     
   </channel>

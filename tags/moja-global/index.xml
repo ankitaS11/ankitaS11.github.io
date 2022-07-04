@@ -6,7 +6,16 @@
     <description>Recent content in Moja Global on Ankita Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/moja-global/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ankitaS11.github.io/tags/moja-global/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ankitaS11.github.io/posts/2022/07/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ankitaS11.github.io/posts/2022/07/</guid>
+      <description>Hi everyone! Thought I’ll update about what I’ve been upto, and how the progress looks like. This week was a little slow in terms of writing codes, but that’s the fun part - half of the time is spent (also: should be) on discussions, getting consensus on your thoughts and discussing options available. I think I have had a fairly great experience doing that, my mentor Andrew helped me push forward to discuss my thoughts openly on GitHub discussions, and I think it was a great learning experience for me.</description>
+    </item>
+    
     <item>
       <title>Outreachy | Week-2</title>
       <link>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</link>
@@ -15,7 +24,7 @@
       <guid>https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/</guid>
       <description>This is my second blog, in the Outreachy series, where I talk about my experience working with the Moja Global community, and what I learnt - dos and don&amp;rsquo;ts, probably?
 It’s too early, to be honest, to comment on what one should not do, but I’m sure I’ve learnt what can be done to be better in the tasks you’ve been assigned to. A few points:
-  Discuss your questions publicly!</description>
+Discuss your questions publicly! Open discussions, issues.</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@ It’s too early, to be honest, to comment on what one should not do, but I’m 
       <guid>https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/</guid>
       <description>As an outreachy intern at Moja Global, I was involved in discussions about storing data in CosmosDB and MongoDB.
 This blog contains my notes on the comparison of MongoDB and CosmosDB. A lot of this is written in terms of how a database server can be useful for my work at Moja Global.
-Factors affecting the choice  Better choice as document storage. Type of data that needs to be stored.</description>
+Factors affecting the choice Better choice as document storage. Type of data that needs to be stored. Performance, storage capacity and throughput scale.</description>
     </item>
     
     <item>

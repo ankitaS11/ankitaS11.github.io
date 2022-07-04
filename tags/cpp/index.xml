@@ -16,8 +16,8 @@
       <description>I came across an interesting question, so thought of sharing this!
 Question : Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 Example 1:
-Input: [1,2,3,4]Output: [24,12,8,6]Example 2:
-Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0]Constraints:
+Input: [1,2,3,4]Output: [24,12,8,6] Example 2:
+Input: nums = [-1,1,0,-3,3]Output: [0,0,9,0,0] Constraints:
 1. 2 &amp;lt;= nums.length &amp;lt;= 1052. -30 &amp;lt;= nums[i] &amp;lt;= 303.</description>
     </item>
     

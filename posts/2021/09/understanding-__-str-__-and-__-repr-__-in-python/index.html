@@ -163,95 +163,95 @@ Firstly, let’s see what these functions returns when they are not defined in t
             <div class="post-content e-content">
                 <p>In class and objects, dunder str ( __ str __( ) ) and dunder repr ( __ repr __( ) ) built-in functions, also known as magic functions are used to return the string representation of the object. If both of them return strings, then what’s the difference between them?</p>
 <p>Firstly, let’s see what these functions returns when they are not defined in the class.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Creating a class named Addition</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
-
-    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
-        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
-        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
-        
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> add
-   
-<span style="color:#75715e"># Creating an object of Addition class</span>
-a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
-
-print(a<span style="color:#f92672">.</span>__str__)
-print(a<span style="color:#f92672">.</span>__repr__)
-</code></pre></div><p><strong>Output</strong></p>
-<pre tabindex="0"><code>&lt;method-wrapper '__str__' of Addition object at 0x0000024EB29404A8&gt;
-&lt;method-wrapper '__repr__' of Addition object at 0x0000024EB29404A8&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Creating a class named Addition</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> add
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creating an object of Addition class</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(a<span style="color:#f92672">.</span>__str__)
+</span></span><span style="display:flex;"><span>print(a<span style="color:#f92672">.</span>__repr__)
+</span></span></code></pre></div><p><strong>Output</strong></p>
+<pre tabindex="0"><code>&lt;method-wrapper &#39;__str__&#39; of Addition object at 0x0000024EB29404A8&gt;
+&lt;method-wrapper &#39;__repr__&#39; of Addition object at 0x0000024EB29404A8&gt;
 </code></pre><p>As you can see, both simply tells us that it’s an instance object of the class <em>Addition</em> at the some memory address which is same for both the methods.</p>
 <p>Now, let&rsquo;s define __ str __ ( ) in our class.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
-
-    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
-        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
-        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
-
-    <span style="color:#66d9ef">def</span> __str__(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> str(add)
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> add
-   
-<span style="color:#75715e"># Creating an object of Addition class</span>
-a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
-print(a)           <span style="color:#75715e"># dunder str will be called</span>
-a                  <span style="color:#75715e"># this will return an address</span>
-</code></pre></div><p><strong>Output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __str__(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> str(add)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> add
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creating an object of Addition class</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
+</span></span><span style="display:flex;"><span>print(a)           <span style="color:#75715e"># dunder str will be called</span>
+</span></span><span style="display:flex;"><span>a                  <span style="color:#75715e"># this will return an address</span>
+</span></span></code></pre></div><p><strong>Output</strong></p>
 <pre tabindex="0"><code>7
 &lt;__main__.Addition at 0x24eb2940da0&gt;
 </code></pre><p>The __ str __( ) method will be called when print( ) is invoked while on calling the object <em>a</em> it simply returns the address. Interesting right? Now, let&rsquo;s remove the __ str __( ) method and define __ repr __( ) in the class and see the results.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
-
-    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
-        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
-        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
-
-    <span style="color:#66d9ef">def</span> __repr__(self):
-         add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-         <span style="color:#66d9ef">return</span> str(add)
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> add
-   
-<span style="color:#75715e"># Creating an object of Addition class</span>
-a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
-print(a)        <span style="color:#75715e"># dunder repr will be called</span>
-a               <span style="color:#75715e"># dunder repr will be called</span>
-</code></pre></div><p><strong>Output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Addition</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __repr__(self):
+</span></span><span style="display:flex;"><span>         add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">return</span> str(add)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> add
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creating an object of Addition class</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> Addition(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>) 
+</span></span><span style="display:flex;"><span>print(a)        <span style="color:#75715e"># dunder repr will be called</span>
+</span></span><span style="display:flex;"><span>a               <span style="color:#75715e"># dunder repr will be called</span>
+</span></span></code></pre></div><p><strong>Output</strong></p>
 <pre tabindex="0"><code>7
 7
 </code></pre><p>Basically, what happens is when str is not defined, then it will call repr. The repr returns a string that by default describes the pointer of the object.</p>
 <p>Let&rsquo;s see what happens when both the methods are defined in the class?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Calci</span>:
-    
-    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
-        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
-        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
-        
-    <span style="color:#66d9ef">def</span> __repr__(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> str(self<span style="color:#f92672">.</span>num1)
-            
-    <span style="color:#66d9ef">def</span> __str__(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> str(add)
-        
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
-        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
-        <span style="color:#66d9ef">return</span> add
-    
-c <span style="color:#f92672">=</span> Calci(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)     <span style="color:#75715e"># Creating an object c of class Calci</span>
-print(c)           <span style="color:#75715e"># this will call __str__()</span>
-print([c])         <span style="color:#75715e"># this will call __repr__()</span>
-c                  <span style="color:#75715e"># this will also  call __repr__()</span>
-</code></pre></div><p><strong>Output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Calci</span>:
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self,num1,num2):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num1 <span style="color:#f92672">=</span> num1
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>num2 <span style="color:#f92672">=</span> num2
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __repr__(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> str(self<span style="color:#f92672">.</span>num1)
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __str__(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> str(add)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Add</span>(self):
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>num1<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>num2
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> add
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> Calci(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)     <span style="color:#75715e"># Creating an object c of class Calci</span>
+</span></span><span style="display:flex;"><span>print(c)           <span style="color:#75715e"># this will call __str__()</span>
+</span></span><span style="display:flex;"><span>print([c])         <span style="color:#75715e"># this will call __repr__()</span>
+</span></span><span style="display:flex;"><span>c                  <span style="color:#75715e"># this will also  call __repr__()</span>
+</span></span></code></pre></div><p><strong>Output</strong></p>
 <pre tabindex="0"><code>7
 [3]
 3

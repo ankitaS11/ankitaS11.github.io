@@ -14,7 +14,7 @@
       
       <guid>https://ankitaS11.github.io/posts/2021/09/basics-of-gans-and-loss-function/</guid>
       <description>GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
-  Discriminator
+Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use.</description>
     </item>
     

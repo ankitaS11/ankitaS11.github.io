@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="map[name:Ankita Sharma]">
 <meta name="description" content="GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
-  Discriminator
+Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use." />
 <meta name="keywords" content=", GANs, notes, Deep Learning" />
 <meta name="robots" content="noodp" />
@@ -46,7 +46,7 @@ It discriminates between two different classes of data, that is why known as bin
 
 <meta itemprop="name" content="Basics of GANs and Loss Function">
 <meta itemprop="description" content="GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
-  Discriminator
+Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use."><meta itemprop="datePublished" content="2021-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-09-25T00:00:00+00:00" />
 <meta itemprop="wordCount" content="760"><meta itemprop="image" content="https://ankitaS11.github.io"/>
@@ -55,7 +55,7 @@ It discriminates between two different classes of data, that is why known as bin
 
 <meta name="twitter:title" content="Basics of GANs and Loss Function"/>
 <meta name="twitter:description" content="GANs are deep neural architecture trained in an adversarial manner (in english dictionary, adversarial means conflict or opposition) to generate data that mimics the distribution we want to approximate. It comprises of two networks - Generator and Discriminator, competing one against the other (that is why Adversarial).
-  Discriminator
+Discriminator
 It discriminates between two different classes of data, that is why known as binary classifier. For exampe when you want to classify real and fake images of person, then discriminative network comes into use."/>
 
 
@@ -197,7 +197,7 @@ theta2 will represnt the weights and biases for the neural network represented b
 OBJECTIVE : <code>pg(x) = pdata(x)</code></li>
 </ul>
 <p>When G(z) is fed into the discriminator, it produces the probability represented as D(G(z)) which ranges between 0 and 1.</p>
-<p>A generative model G to be trained on training data X sampled from some true distribution D is the one which given some random distribution Z produces D' close to D according to some closeness metric. Mathematically z~Z maps to a sample <code>G(z) ~ D'(Generative samples in D')</code>.</p>
+<p>A generative model G to be trained on training data X sampled from some true distribution D is the one which given some random distribution Z produces D&rsquo; close to D according to some closeness metric. Mathematically z~Z maps to a sample <code>G(z) ~ D'(Generative samples in D')</code>.</p>
 <p>Binary cross entropy loss function is given as - 
 <code>L(ypred, y) = y log(ypred) + (1-y) log(1-ypred)</code>
 where, ypred  = reconstructed image, y = original image</p>

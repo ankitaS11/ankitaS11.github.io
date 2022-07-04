@@ -159,22 +159,22 @@ def operations(x): &#34;&#34;&#34;Incrementing x by 1&#34;&#34;&#34; x &#43;= 1 
 
             <div class="post-content e-content">
                 <p>Decorators are functions which modifies the functionality of other functions (instead of adding more codes to original function, decorators can be used). Decorators wrap around the main function and allow us to operate on inputs and outputs. Firstly let us understand functions in python -</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
-    <span style="color:#e6db74">&#34;&#34;&#34;Incrementing x by 1&#34;&#34;&#34;</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> x
-
-operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</code></pre></div><p>Now let&rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, here&rsquo;s how we would do it by changing the original code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
-    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> x
-
-operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</code></pre></div><p>Output</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Incrementing x by 1&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>Now let&rsquo;s say we want to increment our input x by 1 before and after the operations function executes and, to illustrate this example, here&rsquo;s how we would do it by changing the original code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>Output</p>
 <pre tabindex="0"><code>4
 </code></pre><p>We were able to achieve what we want but we now increased the size of our operations function and if we want to do the same incrementing for any other function, we have to add the same code to all of those as well which is not very efficient. This is where decorators comes in to use. Lets understand how to create a decorator -</p>
 <p>The decorator function accepts a function f which is the function we wish to wrap around, ( in our case, it&rsquo;s operations()). The output of the decorator is its wrapper function which receives the arguments and keyword arguments passed to function f.</p>
@@ -187,46 +187,46 @@ operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</s
 <li>wrapper function returns some value(s), which is what the decorator returns as well since it returns wrapper.</li>
 </ol>
 <h1 id="decorator">Decorator</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(f):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-        <span style="color:#e6db74">&#34;&#34;&#34;Wrapper function for @add.&#34;&#34;&#34;</span>
-        x <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#34;x&#34;</span>)               <span style="color:#75715e"># .get() if not altering x</span>
-        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>                            <span style="color:#75715e"># executes before function f</span>
-        x <span style="color:#f92672">=</span> f(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs, x<span style="color:#f92672">=</span>x)
-        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>                            <span style="color:#75715e"># executes after function f</span>
-        <span style="color:#66d9ef">return</span> x
-    <span style="color:#66d9ef">return</span> wrapper
-</code></pre></div><p>We can use this decorator by simply adding it to the top of our main function preceded by the @ symbol.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@add</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
-    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> x
-
-operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</code></pre></div><p>output</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(f):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Wrapper function for @add.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#34;x&#34;</span>)               <span style="color:#75715e"># .get() if not altering x</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>                            <span style="color:#75715e"># executes before function f</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> f(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs, x<span style="color:#f92672">=</span>x)
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>                            <span style="color:#75715e"># executes after function f</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span></code></pre></div><p>We can use this decorator by simply adding it to the top of our main function preceded by the @ symbol.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@add</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>operations(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>output</p>
 <pre tabindex="0"><code>4
 </code></pre><p>The function name and docstring are not what we&rsquo;re looking for but it appears this way because the wrapper function is what was executed. In order to fix this, Python offers functools.wraps which carries the main function&rsquo;s metadata.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> functools <span style="color:#f92672">import</span> wraps
-
-<span style="color:#75715e"># Decorator</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(f):
-    <span style="color:#a6e22e">@wraps</span>(f)
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrap</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-        <span style="color:#e6db74">&#34;&#34;&#34;Wrapper function for @add.&#34;&#34;&#34;</span>
-        x <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#34;x&#34;</span>)
-        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-        x <span style="color:#f92672">=</span> f(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs, x<span style="color:#f92672">=</span>x)
-        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">return</span> x
-    <span style="color:#66d9ef">return</span> wrap
-
-<span style="color:#a6e22e">@add</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
-    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> x
-</code></pre></div><p>Using decorators, we managed to decorate our main function operation() to achieve the customization we wanted without actually altering the function. We can reuse our decorator for other functions that may need the same customization!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> functools <span style="color:#f92672">import</span> wraps
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Decorator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(f):
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@wraps</span>(f)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrap</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Wrapper function for @add.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> f(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs, x<span style="color:#f92672">=</span>x)
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrap
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@add</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operations</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Basic operations.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x
+</span></span></code></pre></div><p>Using decorators, we managed to decorate our main function operation() to achieve the customization we wanted without actually altering the function. We can reuse our decorator for other functions that may need the same customization!</p>
 
             </div>
         </article>
