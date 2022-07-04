@@ -1,24 +1,24 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
-path = "./posts/2022/07/index.html"
-url = "https://ankitaS11.github.io/posts/2022/07/"
-title = ""
+path = "./posts/2022/07/my-progress-so-far/index.html"
+url = "https://ankitaS11.github.io/posts/2022/07/my-progress-so-far/"
+title = "My Progress so far"
 
 [[input.files]]
-path = "./posts/2022/06/outreachy-week-2/index.html"
-url = "https://ankitaS11.github.io/posts/2022/06/outreachy-week-2/"
-title = "Outreachy | Week-2"
+path = "./posts/2022/06/outreachy/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy/"
+title = "Outreachy"
 
 [[input.files]]
-path = "./posts/2022/06/mongodb-vs-cosmosdb/index.html"
-url = "https://ankitaS11.github.io/posts/2022/06/mongodb-vs-cosmosdb/"
-title = "MongoDB vs CosmosDB"
+path = "./posts/2022/06/outreachy-discussion-mongodb-vs-cosmosdb/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-discussion-mongodb-vs-cosmosdb/"
+title = "Outreachy Discussion: MongoDB vs CosmosDB"
 
 [[input.files]]
-path = "./posts/2022/06/outreachy-introduce-yourself/index.html"
-url = "https://ankitaS11.github.io/posts/2022/06/outreachy-introduce-yourself/"
-title = "Outreachy | Introduce Yourself"
+path = "./posts/2022/06/outreachy-starting-as-an-intern/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-starting-as-an-intern/"
+title = "Outreachy: Starting as an intern"
 
 [[input.files]]
 path = "./posts/2021/10/product-of-an-array-except-self/index.html"
