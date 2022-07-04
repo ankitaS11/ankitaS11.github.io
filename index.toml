@@ -1,19 +1,19 @@
 # We use the generated html to prevent issues involving markdown frontmatter
 
 [[input.files]]
-path = "./posts/2022/07/my-progress-so-far/index.html"
-url = "https://ankitaS11.github.io/posts/2022/07/my-progress-so-far/"
-title = "My Progress so far"
+path = "./posts/2022/07/outreachy-my-progress-so-far/index.html"
+url = "https://ankitaS11.github.io/posts/2022/07/outreachy-my-progress-so-far/"
+title = "Outreachy: My Progress so far"
 
 [[input.files]]
-path = "./posts/2022/06/outreachy/index.html"
-url = "https://ankitaS11.github.io/posts/2022/06/outreachy/"
-title = "Outreachy"
+path = "./posts/2022/06/outreachy-everyone-struggles/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-everyone-struggles/"
+title = "Outreachy: Everyone Struggles!"
 
 [[input.files]]
-path = "./posts/2022/06/outreachy-discussion-mongodb-vs-cosmosdb/index.html"
-url = "https://ankitaS11.github.io/posts/2022/06/outreachy-discussion-mongodb-vs-cosmosdb/"
-title = "Outreachy Discussion: MongoDB vs CosmosDB"
+path = "./posts/2022/06/outreachy-discussion-on-mongodb-vs-cosmosdb/index.html"
+url = "https://ankitaS11.github.io/posts/2022/06/outreachy-discussion-on-mongodb-vs-cosmosdb/"
+title = "Outreachy: Discussion on MongoDB vs CosmosDB"
 
 [[input.files]]
 path = "./posts/2022/06/outreachy-starting-as-an-intern/index.html"
